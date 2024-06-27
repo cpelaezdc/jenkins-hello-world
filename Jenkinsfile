@@ -1,12 +1,6 @@
 pipeline {
           agent any
           stages {
-              stage('Checkout') {
-                steps {
-                    git branch: 'main', url: 'https://github.com/cpelaezdc/jenkins-hello-world.git'
-                }
-              }
-
               stage('Build') {
                   steps {
                       script {
