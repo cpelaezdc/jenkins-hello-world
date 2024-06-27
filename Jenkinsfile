@@ -5,7 +5,7 @@ pipeline {
                   steps {
                       script {
                           // Choisissez la commande en fonction de votre script
-                          ls
+                          sh "ls -l"
                           //sh 'python hello.py' // Pour Python
                           // sh 'javac HelloWorld.java && java HelloWorld' // Pour Java
                       }
